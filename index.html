@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Johan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">HOJA DE VIDA</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/johan.jpg" alt="">
+            </div>
+            <h1>JOHAN RODRIGUEZ</h1>
+            <h2>Desarrollador de Software - Experto Front end</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/johanrodr%C3%ADguezmorales/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Johan Rodriguez.</span> Técnico en Desarrollo de Software con
+                diplomado en el área Front-end, Back
+                end, con nivel conversacional de inglés,
+                además con más de dos años de
+                experiencia desempeñando funciones
+                relacionadas con el desarrollo de
+                aplicaciones móviles con tecnologías
+                como android studio, react native, flutter,
+                además lenguajes front end como React
+                JS, Angular JS, JavaScript, HTML5 y
+                CSS, además cuenta con habilidades en
+                la administración básica de bases de
+                datos manejando herramientas como
+                PHP y MySQL. Con competencias como
+                trabajo en equipo, manejo de
+                metodología agiles, resolución de
+                conflictos, innovación y orientación al
+                servicio.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            20-04-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +573003757864
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            johanromorales97@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://johan2097.github.io/portafolio-johan/#inicio
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Medellin , Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="img/hojadevidajohan.pdf"><button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS & Responsive Design</span>
+                    </div>
+                    <div class="skill">
+                        <span>Angular & React JS</span>
+                    </div>
+                    <div class="skill">
+                        <span>CMS</span>
+                    </div>
+                    <div class="skill">
+                        <span>Ionic</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                    </div>
+                    <div class="skill">
+                        <span>Documentacion de proyectos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HOJA DE VIDA -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>HOJA DE VIDA</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologia en desarrollo de software</h4>
+                        <span class="casa">ITM</span>
+                        <span class="fecha">2022 - presente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomado en desarrollo de software</h4>
+                        <span class="casa">Acamica</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico en desarrollo de software</h4>
+                        <span class="casa">Cesde</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologia en mercadeo</h4>
+                        <span class="casa">Escolme</span>
+                        <span class="fecha">2015 - 2018</span>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Freelance Developer</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2020 - presente</span>
+                        <p>Realización de paginas web en VTEX Legacy, React JS,
+                            Javascript, Angular, PHP, MySQL, CSS Y HTML:5 Los principales clientes con que he trabajado han sido: Crocs,
+                            whirlpool, mussi, Mapple respiratory, corona, imusa, 
+                            En estas tareas manejo la metodología ágil SCRUM, para el
+                            seguimiento de las gestiones de tareas y la plataforma,
+                            adicionalmente por medio de archivos se documento los
+                            procesos de trabajo ejecutados. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">E-partner</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Realización de paginas web en VTEX Legacy,React JS, CSS Y
+                            HTML:5. Cabe destacar que se trabajo con la metodologia agil SCRUM,
+                            para el seguimiento de las gestiones de tareas y la plataforma
+                            con que revisamos estos procesos eran con ASANA,
+                            adicionalmente por medio de archivos se documentaba los
+                            procesos de trabajo ejecutados. Los principales clientes con que labore fue: Bata- Arturocalle -
+                            Racketball - Libreria lerner - Importadoras Asociadas..</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Kiero</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Realización de paginas web en enfasis en NextJS, JSON, React
+                            JS, CSS y HTML:5. ademas usabamos la metodologia agil
+                            SCRUM, para el seguimiento de las gestiones de tareas y la
+                            plataforma con que revisamos estos procesos eran con Trello,
+                            adicionalmente por medio de archivos se documentaba los
+                            procesos de trabajo ejecutado</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollador</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/johanrodr%C3%ADguezmorales/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
